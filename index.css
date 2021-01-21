@@ -40,10 +40,7 @@ div.name{
   background-image: url("images/background.gif");
   background-size: cover;
   border-radius: 10px;
-}
-section#skills{
-    background-color:rgb(20, 155, 20);
-    
+  width: 100%;
 }
 #habilidade{
     display: flex;
@@ -113,4 +110,19 @@ button {
 button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
+}
+@media (max-width: 600px){
+    div.name{
+        width: 100%;
+    }
+    #habilidades{
+        flex-direction: column;
+        width: 100%;
+    }
+    #frontend{
+        width: 100%;
+    }
+    #backend{
+        width: 100%;
+    }
 }
