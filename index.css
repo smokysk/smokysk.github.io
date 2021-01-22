@@ -111,12 +111,16 @@ button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
 }
-@media (max-width: 600px){
-    div.name{
-        width: 100%;
+@media (max-width: 400px){
+    body{
+        margin: 0;
     }
-    #habilidades{
+    div.name{
+        width: auto;
+    }
+    #habilidade{
         flex-direction: column;
+        justify-items: center;
         width: 100%;
     }
     #frontend{
@@ -124,5 +128,11 @@ button:hover {
     }
     #backend{
         width: 100%;
+    }
+    #contato p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 15px;
     }
 }
