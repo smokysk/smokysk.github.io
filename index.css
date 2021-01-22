@@ -111,12 +111,27 @@ button:hover {
     background-color: #4CAF50; /* Green */
     color: white;
 }
-@media (max-width: 400px){
+@media (max-width: 600px){
+
     body{
         margin: 0;
     }
     div.name{
-        width: auto;
+        width: 100%;
+    }
+    div.name h1{
+        font-size: 30px;
+    }
+    div.name h2{
+        font-size: 30px;
+    }
+    div.name code{
+        color: white;
+        transition-duration: 0.s;
+    }
+    div.name code:hover{ 
+        color: #4CAF50;
+        
     }
     #habilidade{
         flex-direction: column;
@@ -126,13 +141,22 @@ button:hover {
     #frontend{
         width: 100%;
     }
+    #frontend ul{ 
+        padding: 0;
+    }
     #backend{
         width: 100%;
+    }
+    #backend ul{
+        padding: 0;
     }
     #contato p{
         font-size: 15px;
     }
     button{
         font-size: 15px;
+    }
+    ul li{
+        margin: 0;
     }
 }
